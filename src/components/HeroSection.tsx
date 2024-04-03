@@ -12,9 +12,7 @@ export function HeroSection() {
   return (
     <div >
     
-    <AuroraBackground className="relative ">
-
-           
+    <AuroraBackground className="dark:bg-black relative ">
 
       <motion.div
         initial={{ opacity: 0.0, y: 40 }}
@@ -51,7 +49,7 @@ export function HeroSection() {
       </motion.div>
       <NavBar /> 
       
-      <div className="flex w-full  bg-black flex-col justify-center items-center gap-x-10 gap-y-10 py-16 md:px-10 md:flex-row">
+      <div className="flex w-full bg-black flex-col justify-center items-center gap-x-10 gap-y-10 py-16 md:px-10 md:flex-row">
         <div className="flex-1 w-full mt-10  px-7 space-y-3">
           <p className="wave text-6xl">👋</p>
 
@@ -86,9 +84,11 @@ export function HeroSection() {
           <Image
       src="/images/amrit3.png" // Route of the image file
       className="rounded-lg w-[90%] z-[500]"
-      width={300} // Desired size with correct aspect ratio
-      height={300} // Desired size with correct aspect ratio
-      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+      width={
+        200
+      } // Desired size with correct aspect ratio
+      height={200} // Desired size with correct aspect ratio
+      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 40vw, 28vw"
       alt="Your Name"
     />
 
@@ -101,11 +101,7 @@ export function HeroSection() {
 
     </AuroraBackground>
 
-    {/* <InfiniteMovingCards
-        items={testimonials}
-        direction="right"
-        speed="slow"
-      /> */}
+   
 
     {/* <ProjectSection /> */}
     
@@ -113,4 +109,3 @@ export function HeroSection() {
     </div>
   );
 }
-

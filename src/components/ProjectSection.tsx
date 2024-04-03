@@ -1,18 +1,25 @@
 "use client";
 
 import { HoverEffect } from "./ui/card-hover-effect";
+import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 
 export function ProjectSection({id}: {id: string}) {
   return (
-    <div id={id} className="max-w-5xl mx-auto p-8 my-4">
-      <h1 className="text-4xl md:text-5xl text-center font-semibold">Projects</h1>
-      <HoverEffect items={projects} />
+    <div id={id} className="dark:bg-black w-full mx-auto p-8">
+      <h1 className="text-4xl md:text-5xl text-black dark:text-white  text-center font-semibold">Projects</h1>
+      {/* <HoverEffect items={projects} /> */}
+      <InfiniteMovingCards
+      className="py-5"
+        items={projects}
+        direction="left"
+        speed="slow"
+      />
     </div>
   );
 }
 export const projects = [
   {
-    title: "Aerial Robotics - Computer Vision Drone ",
+    title: "Aerial Robotics - Computer Vision Drone",
     timeline: "Sept. 2023 - IIT Jodhpur",
     description:
       "YOLOV7, SSH, ArduPilot, Electronics, BLDC Motors and Electronic Speed Controllers.\n\n•Core Team Member in the development of an Image Detecting drone controlled by Pixhawk, Raspberry Pi and operated by CNN to stream video data, under Prof. Binod Sharma as a part of Robotics Society.•\nElectronics: Pixhawk V2.4.8 Flight board, NEO-M8N GPS Module, BLDC, 30A ESC",
