@@ -40,7 +40,7 @@ export  function LandingSection() {
                 Get in Touch
             </h1>
             <p className="text-center mt-2 text-neutral-300 relative z-20">
-                Framer motion is the best animation library ngl
+                Contact Me at -----
             </p>
             </div>
             </div>
