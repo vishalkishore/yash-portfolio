@@ -1,5 +1,7 @@
 import React from "react";
 import {HeroSection}  from "./HeroSection";
+
+import { SkillsSection } from "./SkillsSection";
 import { ProjectSection } from "./ProjectSection";
 import { ExperienceSection } from "./ExperienceSection";
 import { EducationSection } from "./EducationSection";
@@ -12,16 +14,20 @@ export  function LandingSection() {
         <>
             <HeroSection></HeroSection>
 
-            <div id="about-section" className="max-w-7xl mx-auto p-10 flex flex-col gap-3 md:flex-row justify-center items-center dark:bg-black">
+            <div id="about-section" className="max-w-7xl mx-auto p-10 flex flex-col gap-3 md:flex-row  dark:bg-black">
                 <div className="flex-1 w-full ">
                     <h1 className="text-3xl md:text-3xl text-black dark:text-white  text-center font-semibold">Education</h1>
-                    <ExperienceSection></ExperienceSection>
+                    <EducationSection></EducationSection>
                 </div>
                 <div className="flex-1 w-full">
                 <h1 className="text-3xl md:text-3xl text-black dark:text-white  text-center font-semibold">Experience</h1>
                 <ExperienceSection></ExperienceSection>
                 </div>
             </div>
+
+            <SkillsSection>
+               
+            </SkillsSection>
 
             <ProjectSection id={"projects"}></ProjectSection> 
             

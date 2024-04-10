@@ -26,21 +26,21 @@ export function EducationSection({className}:{className?:string}) {
 
 const accordionData = [
     {
-      title: 'ISRO Robotics Challenge\nIRoC URSC 2024',
-      timeline: 'Jan. 2024 - Present',
-      content: `• Tools and Technologies: CAD Modelling, Fusion 360, Rocker-Bogie Mechanism Design, Finite Element Analysis\n
-      • As Mechanical Subsystem Head, researched greatly over mechanics of Space Rovers, Wheel Design, Load Analysis
-      and Team Management.
+      title: 'Indian Institite of Technology Johpur',
+      timeline: 'B.Tech Mechanical Engineering | 2022-2026',
+      content: `CGPA - 9.10
       `
     },
     {
-      title: 'Student Research Assistant',
-      timeline: 'Nov 2023 - Jan. 2024',
-      content: `• Tools and Technologies: Ansys Workbench, Finite Element Analysis/ Method (FEA/FEM), Acoustic Analysis,
-      Ansys Mechanical, Ansys Electrical\n
-      • Worked under Professor Amrita Puri to learn Ansys software simulations for mechanical and electrical subsystems.\n
-      • Researched alongside various students on the functioning and mathematics of Brushless DC motors and DC motors
-      used in loudspeakers and how efficiecy of loudpseakers can be altered by variation in deifferent parameters.
+      title: 'HSC Maharsahtra State Board',
+      timeline: 'Senior Nov 2023 - Jan. 2024',
+      content: `• Tools and Technologies: Ansys 
+      `
+    },
+    {
+      title: 'IGCSE Board',
+      timeline: 'Secondary Nov 2023 - Jan. 2024',
+      content: `• Tools and Technologies: Ansys 
       `
     },
    
