@@ -6,7 +6,7 @@ import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 export function ProjectSection({id}: {id: string}) {
   return (
     <div id={id} className="dark:bg-black w-full mx-auto p-8">
-      <h1 className="text-4xl md:text-5xl text-black dark:text-white  text-center font-semibold">Projects</h1>
+      <h1 className="text-3xl md:text-3xl text-black dark:text-white  text-center font-semibold">Projects</h1>
       {/* <HoverEffect items={projects} /> */}
       <InfiniteMovingCards
       className="py-5"

@@ -15,9 +15,9 @@ export function NavBar () {
     // };
     let Links =[
         {name:"Home",link:"/"},
-        {name:"About Me",link:"/"},
+        {name:"About Me",link:"#about-section"},
         {name:"Projects",link:"#projects"},
-        {name:"Get in Touch",link:"/"},
+        {name:"Get in Touch",link:"#contact-section"},
       ];
       let [open, setOpen] =useState(false);
     // window.addEventListener("scroll", changeNavbarStyles);

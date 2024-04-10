@@ -1,6 +1,8 @@
 import React from "react";
 import {HeroSection}  from "./HeroSection";
 import { ProjectSection } from "./ProjectSection";
+import { ExperienceSection } from "./ExperienceSection";
+import { EducationSection } from "./EducationSection";
 import { Boxes } from "./ui/background-boxes";
 import { cn } from "../utils/cn";
 
@@ -10,18 +12,21 @@ export  function LandingSection() {
         <>
             <HeroSection></HeroSection>
 
-            <div className="max-w-5xl mx-auto p-10 flex flex-col gap-3 md:flex-row justify-center items-center dark:bg-black">
-                <div className="flex-1 w-full bg-slate-200">
-                    <h1 className="text-3xl text-black dark:text-white text-center">Education</h1>
+            <div id="about-section" className="max-w-7xl mx-auto p-10 flex flex-col gap-3 md:flex-row justify-center items-center dark:bg-black">
+                <div className="flex-1 w-full ">
+                    <h1 className="text-3xl md:text-3xl text-black dark:text-white  text-center font-semibold">Education</h1>
+                    <ExperienceSection></ExperienceSection>
                 </div>
-                <div className="flex-1 w-full bg-slate-500">
-                <h1 className="text-3xl text-black dark:text-white text-center">Experience</h1>
+                <div className="flex-1 w-full">
+                <h1 className="text-3xl md:text-3xl text-black dark:text-white  text-center font-semibold">Experience</h1>
+                <ExperienceSection></ExperienceSection>
                 </div>
             </div>
 
             <ProjectSection id={"projects"}></ProjectSection> 
+            
             <div className="dark:bg-black p-10">
-            <div className="dark:bg-black h-96 relative w-[90%] mx-auto overflow-hidden  flex flex-col items-center justify-center rounded-lg">
+            <div id="contact-section" className="dark:bg-black h-96 relative w-[90%] mx-auto overflow-hidden  flex flex-col items-center justify-center rounded-lg">
             <div className="absolute rounded-lg inset-0 w-full h-full  z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
 
             <Boxes />
