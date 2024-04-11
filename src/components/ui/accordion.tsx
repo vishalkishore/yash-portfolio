@@ -28,8 +28,7 @@
 "use client";
 
 import { createContext, useContext, useRef, useEffect, useState } from "react"
-import { ChevronDownIcon } from "@heroicons/react/24/solid"
-
+import { IconChevronDown } from '@tabler/icons-react';
 
 
 const AccordianContext = createContext<any>({});
@@ -61,19 +60,19 @@ export function AccordianItem({ children, value, title,timeline, className, ...p
       <header
         role="button"
         onClick={() => setSelected(open ? null : value)}
-        className="flex justify-between items-center p-4 font-medium"
+        className="flex justify-between items-center p-4"
       >
         <div>
         <span className="block">
         {title}
         </span>
-        <span className="block">
+        <span className="block text-sm text-zinc-400">
         {timeline}
         </span>
         </div>
         
-        <ChevronDownIcon
-          
+        <IconChevronDown
+          stroke={2}
           className={`w-[16px] transition-transform ${open ? "rotate-180" : ""}`}
         />
        

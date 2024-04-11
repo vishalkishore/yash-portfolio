@@ -25,7 +25,7 @@ export  function LandingSection() {
                 </div>
             </div>
 
-            <SkillsSection>
+            <SkillsSection className="bg-[#0a0b0d]">
                
             </SkillsSection>
 
@@ -44,7 +44,7 @@ export  function LandingSection() {
             </p>
             </div>
             </div>
-            <div className="w-full flex items-center justify-center dark:text-white dark:bg-[#111] py-5">
+            <div className="w-full flex items-center justify-center dark:text-white dark:bg-[#0a0b0d] py-5">
                 <h1>Copyright @ 2024</h1>
             </div>
         

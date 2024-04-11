@@ -10,7 +10,7 @@ export function ExperienceSection({className}:{className?:string}) {
       <div className="w-full md:w-[90%] mx-auto">
         <Accordian className="w-full" >
           {accordionData.map(({  title,timeline,content }) => (
-            <AccordianItem className="text-[#dddddd]" value={title} key={title} title={title} timeline={timeline}>
+            <AccordianItem className="text-[#eee]" value={title} key={title} title={title} timeline={timeline}>
               <p className="text-zinc-400 whitespace-pre-line tracking-wide leading-relaxed text-sm ">
               {content}
               </p>
