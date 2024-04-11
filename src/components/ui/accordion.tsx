@@ -30,14 +30,16 @@
 import { createContext, useContext, useRef, useEffect, useState } from "react"
 import { ChevronDownIcon } from "@heroicons/react/24/solid"
 
-const AccordianContext = createContext()
 
-export default function Accordian({ children, value, onChange,className, ...props }:{children:any;value:string;onChange:Function;className?:string;}) {
+
+const AccordianContext = createContext<any>({});
+
+export default function Accordian({ children, value, onChange,className, ...props }:{children:any;value?:string;onChange?:Function;className?:string;}) {
   const [selected, setSelected] = useState(value)
 
   useEffect(() => {
     onChange?.(selected)
-  }, [selected])
+  }, [selected, onChange])
 
   return (
     <ul {...props}>
@@ -52,7 +54,7 @@ export function AccordianItem({ children, value, title,timeline, className, ...p
   const { selected, setSelected } = useContext(AccordianContext)
   const open = selected === value
 
-  const ref = useRef(null)
+  const ref = useRef<HTMLDivElement>(null);
 
   return (
     <li className="rounded-lg    mb-3 bg-[#1E293B]" {...props}>
