@@ -73,7 +73,7 @@ export function AccordianItem({ children, value, title,timeline, className, ...p
         
         <IconChevronDown
           stroke={2}
-          className={`w-[16px] transition-transform ${open ? "rotate-180" : ""}`}
+          className={`w-[16px] dark:text-white transition-transform ${open ? "rotate-180" : ""}`}
         />
        
       </header>
