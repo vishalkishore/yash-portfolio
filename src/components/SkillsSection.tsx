@@ -21,8 +21,8 @@ export function SkillsSection({className}:{className?:string}) {
                     {skills.map((skill, index) => (
                         <div key={index} className="rounded-full px-3 py-[6px] border-t-white border-2 transition-all ease-in hover:bg-[#1e2631] flex justify-around
                         space-x-2">
-                            <IconDiamond stroke={1.25} />
-                            <h1>{skill}</h1>
+                            <IconDiamond className="dark:text-white" stroke={1.25} />
+                            <h1 className="text-black dark:text-white">{skill}</h1>
                         </div>
                     ))}
                 </div>

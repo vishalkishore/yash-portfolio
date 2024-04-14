@@ -63,7 +63,7 @@ export function AccordianItem({ children, value, title,timeline, className, ...p
         className="flex justify-between items-center p-4"
       >
         <div>
-        <span className="block">
+        <span className="block dark:text-[#eee]">
         {title}
         </span>
         <span className="block text-sm text-zinc-400">
