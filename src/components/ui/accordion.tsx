@@ -49,7 +49,7 @@ export default function Accordian({ children, value, onChange,className, ...prop
   )
 }
 
-export function AccordianItem({ children, value, title,timeline, className, ...props }:{children:any;value:string;title:string;timeline:string;className?:string;}) {
+export function AccordianItem({ children, value, title,timeline, content,className, ...props }:{children:any;value:string;title:string;timeline:string; content:string;className?:string;}) {
   const { selected, setSelected } = useContext(AccordianContext)
   const open = selected === value
 
@@ -71,20 +71,20 @@ export function AccordianItem({ children, value, title,timeline, className, ...p
         </span>
         </div>
         
-        <IconChevronDown
+        { content && <IconChevronDown
           stroke={2}
           className={`w-[16px] dark:text-white transition-transform ${open ? "rotate-180" : ""}`}
-        />
+        />}
        
       </header>
-      <div
+      {content && <div
         className="overflow-y-hidden transition-all"
         style={{ height: open ? ref.current?.offsetHeight || 0 : 0 }}
       >
         <div className="pt-2 p-4" ref={ref}>
           {children}
         </div>
-      </div>
+      </div>}
     </li>
   )
 }
