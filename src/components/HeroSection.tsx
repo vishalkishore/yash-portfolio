@@ -49,7 +49,7 @@ export function HeroSection() {
       </motion.div>
       <NavBar /> 
       
-      <div className="flex w-full bg-black flex-col justify-center items-center gap-x-10 gap-y-10 py-16 md:px-10 md:flex-row">
+      <div className="flex w-full min-h-[90vh] bg-black flex-col justify-center items-center gap-x-10 gap-y-10 py-16 md:px-10 md:flex-row">
         <div className="flex-1 w-full mt-10  px-7 space-y-3">
           <p className="wave text-6xl">👋</p>
 
@@ -82,7 +82,7 @@ export function HeroSection() {
         
           <Image
       src="/images/yash.jpg" // Route of the image file
-      className="rounded-full w-[90%] z-[500]"
+      className="rounded-full my-10 w-[70%] z-[500]"
       width={
         100
       } // Desired size with correct aspect ratio
