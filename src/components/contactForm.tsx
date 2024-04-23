@@ -37,7 +37,6 @@ export function ContactForm() {
         });
         const result = await response.json();
         if (result.success) {
-            console.log(result);
             alert("I have received your message! I will get back to you soon.");
         }
     }
