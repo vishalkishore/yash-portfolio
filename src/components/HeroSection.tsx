@@ -81,13 +81,13 @@ export function HeroSection() {
         <div className="flex flex-1 md:mt-o mt-10 items-center justify-center w-full">
         
           <Image
-      src="/images/amrit3.png" // Route of the image file
-      className="rounded-lg w-[90%] z-[500]"
+      src="/images/yash.jpg" // Route of the image file
+      className="rounded-full w-[90%] z-[500]"
       width={
-        200
+        100
       } // Desired size with correct aspect ratio
-      height={200} // Desired size with correct aspect ratio
-      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 40vw, 28vw"
+      height={100} // Desired size with correct aspect ratio
+      sizes="(max-width: 300px) 50vw, (max-width: 300px) 40vw, 28vw"
       alt="Your Name"
     />
 
