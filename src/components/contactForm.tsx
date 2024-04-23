@@ -33,7 +33,7 @@ export function ContactForm() {
                 Accept: "application/json",
             },
             body: JSON.stringify({
-                access_key: "33a02e19-0dbf-427e-b2f8-1c35e2ce1edc",
+                access_key: process.env.WEB3FORMS_ACCESS_KEY,
                 name: toTitleCase(`${target.firstname.value}  ${target.lastname.value}`),
                 email: target.email.value,
                 message: target.message.value,
