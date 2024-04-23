@@ -5,6 +5,7 @@ import { SkillsSection } from "./SkillsSection";
 import { ProjectSection } from "./ProjectSection";
 import { ExperienceSection } from "./ExperienceSection";
 import { EducationSection } from "./EducationSection";
+import { ContactForm } from "./contactForm";
 import { Boxes } from "./ui/background-boxes";
 import { cn } from "../utils/cn";
 
@@ -37,7 +38,7 @@ export  function LandingSection() {
             <div className="w-full dark:bg-[#0a0b0d]">
             <div id="about-section" className="max-w-7xl mx-auto p-10 flex flex-col gap-3 md:flex-row ">
                 <div className="flex-1 w-full ">
-                    <h1 className="text-3xl md:text-3xl text-black dark:text-white  text-center font-semibold">Position of Responsiblity</h1>
+                    <h1 className="text-3xl md:text-3xl text-black dark:text-white  text-center font-semibold">Position of Responsibility</h1>
                     <EducationSection data={porData}></EducationSection>
                 </div>
                 <div className="flex-1 w-full">
@@ -46,18 +47,21 @@ export  function LandingSection() {
                 </div>
             </div>
             </div>
-
+            
             <div className="dark:bg-black p-10">
-            <div id="contact-section" className="dark:bg-black h-96 relative w-[90%] mx-auto overflow-hidden  flex flex-col items-center justify-center rounded-lg">
+            <div id="contact-section" className="dark:bg-black  relative w-[90%] mx-auto overflow-hidden  flex flex-col items-center justify-center rounded-lg">
             <div className="absolute rounded-lg inset-0 w-full h-full  z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
 
             <Boxes />
-            <h1 className={cn("md:text-4xl text-xl dark:text-white relative z-20 font-semibold italic")}>
+            <h1 className={cn("md:text-4xl mt-5 text-xl dark:text-white relative z-20 font-semibold ")}>
                 Get in Touch
             </h1>
-            <p className="text-center mt-2 text-neutral-300 relative z-20">
+            {/* <p className="text-center mt-2 text-neutral-300 relative z-20">
                 Contact Me at -----
-            </p>
+            </p> */}
+            <div className="z-20 my-5 relative">
+            <ContactForm></ContactForm>
+            </div>
             </div>
             </div>
             <div className="w-full flex items-center justify-center dark:text-white dark:bg-[#0a0b0d] py-5">

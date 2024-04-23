@@ -57,11 +57,11 @@ export function HeroSection() {
           <a className="text-7xl md:text-7xl font-bold dark:text-white text-left fadeInUp-animation">
             Yash Golani.
           </a>
-          <p className="text-lg text-slate-200 md:text-lg fadeInUp-animation">
+          {/* <p className="text-lg text-slate-200 md:text-lg fadeInUp-animation">
             Experienced&nbsp
             <span id="typewriter" data-array=""></span>
             <span className="cursor"></span>
-          </p>
+          </p> */}
           <div className="flex mt-10 gap-x-5 items-center">
             <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-1 focus:ring-slate-400 focus:ring-offset-1 focus:ring-offset-slate-50">
             <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
