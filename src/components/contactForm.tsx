@@ -5,11 +5,7 @@ import { Input } from "./ui/input";
 import { TextField } from "./ui/textfield";
 import { cn } from "@/utils/cn";
 // import HCaptcha from '@hcaptcha/react-hcaptcha';
-import {
-  IconBrandGithub,
-  IconBrandGoogle,
-  IconBrandOnlyfans,
-} from "@tabler/icons-react";
+
 
 
 function toTitleCase(str: string) {
@@ -33,7 +29,7 @@ export function ContactForm() {
                 Accept: "application/json",
             },
             body: JSON.stringify({
-                access_key: process.env.WEB3FORMS_ACCESS_KEY,
+                access_key: process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY,
                 name: toTitleCase(`${target.firstname.value}  ${target.lastname.value}`),
                 email: target.email.value,
                 message: target.message.value,
@@ -42,6 +38,7 @@ export function ContactForm() {
         const result = await response.json();
         if (result.success) {
             console.log(result);
+            alert("I have received your message! I will get back to you soon.");
         }
     }
     // const handleVerificationSuccess = (token: string, ekey: string) => {
